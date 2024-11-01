@@ -1,0 +1,14 @@
+#include<float.h>
+#include<limits.h>
+#include<stdio.h>
+
+int main(void)
+{
+   printf("short型の符号なし最大値：%g\n",USHRT_MAX);
+   printf("short型の最大値：%g\n",SHRT_MAX);
+   printf("short型の最小値：%d\n",SHRT_MIN);
+   printf("long型の最大値：%d\n",LONG_MAX);
+   printf("long型の最小値：%d\n",LONG_MIN);
+   
+   return 0;
+}
