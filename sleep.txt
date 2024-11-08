@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+     int A;
+     printf("How long sleep");
+     scanf("%d", &A);
+     
+     if (A >=6 && A < 12)
+     {
+         printf("it's very healthy");
+     }
+     
+     else if (A>=12 )
+     {
+         printf("are you alive?????");
+     }
+     
+     else
+     {
+         printf("Sleep tight");
+     }
+     
+     return 0;
+}
+
+}
