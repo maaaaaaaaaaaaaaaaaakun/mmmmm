@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define status 20
+int main(void)
+{
+    int i, n[99], m[99], s[99];
+    for(i=0; i<100; i++)
+    {
+        srand(time(0));
+        n[i] = rand() % 11, m[i] = rand() %(20 - n[i]),s[i] = 20-n[i]-m[i];
+        if(n[i] > m[i] && n[i] > s[i]){
+          printf("mage\n");
+          printf("intelligence:%d, stamina:%d charisma:%d", n[i], m[i],s[i]);
+          return 0;
+        }
+        if(m[i] > n[i] && m[i] > s[i]){
+          printf("knight\n");
+          printf("intelligence:%d, stamina:%d charisma:%d", n[i], m[i],s[i]);
+          return 0;
+        }
+        if(s[i] > m[i] && s[i] > n[i]){
+          printf("thief\n");
+          printf("intelligence:%d, stamina:%d, charisma:%d", n[i], m[i],s[i]);
+          return 0;
+        }
+    }
+    return 0;
+    
